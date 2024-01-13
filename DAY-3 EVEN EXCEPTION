@@ -1,0 +1,24 @@
+public class Evenex {
+
+    public static void main(String[] args) {
+        try {
+            int numberToCheck = 6;
+            checkIfEven(numberToCheck);
+            System.out.println(numberToCheck + " is an even number.");
+        } catch (EvenNumberException e) {
+            System.out.println(e);
+        }
+    }
+
+    public static void checkIfEven(int number) throws EvenNumberException {
+        if (number % 2 == 0) {
+            throw new EvenNumberException("Error: The number is even.");
+        }
+    }
+}
+
+class EvenNumberException extends Exception {
+    public EvenNumberException(String message) {
+        super(message);
+    }
+}
