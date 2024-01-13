@@ -1,0 +1,23 @@
+class Ex
+{
+public void display()
+{
+ try
+{
+int[] a=new int[3];
+a[4]=67;
+}
+catch(ArrayIndexOutOfBoundsException e)
+{
+ System.out.println("me raised exception");
+}
+}
+}
+public class AB
+{
+public static void main(String a[])
+{
+ Ex obj=new Ex();
+ obj.display();
+}
+}
