@@ -1,0 +1,13 @@
+import java.io.*;
+public class FileReader{
+public static void main(String arg[]){
+try{
+String s=null;
+int i;
+File file=new File ("QWERTY.txt");
+BufferedReader br=new BufferedReader(new FileReader(file));
+while ((s=br.readLine())!=null)
+System.out.println("content of the file are\n\t"+s+file.ListRoots());
+}
+}
+}
