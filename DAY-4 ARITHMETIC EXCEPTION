@@ -1,0 +1,21 @@
+class Ex
+{
+public void display()
+{
+try{
+int a=5/0;
+}
+catch(AirthimeticException e)
+{
+System.out.println("me raised exception");
+}
+}
+}
+public class AA
+{
+public static void main(String arg[])
+{
+Ex obj=new Ex();
+obj.display();
+}
+}
