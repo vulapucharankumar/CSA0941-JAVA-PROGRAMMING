@@ -1,0 +1,21 @@
+public class IllegalArgumentExceptionExample {
+    public static void main(String[] args) {
+        try {
+            
+            int result = calculateSquareRoot(-25);
+            System.out.println("Square root: " + result); 
+        } catch (IllegalArgumentException e) {
+            System.out.println("IllegalArgumentException caught: " + e.getMessage());
+        } finally {
+            System.out.println("This block always gets executed.");
+        }
+    }
+
+    
+    private static int calculateSquareRoot(int number) {
+        if (number < 0) {
+            throw new IllegalArgumentException("Cannot calculate square root of a negative number");
+        }
+        return (int) Math.sqrt(number);
+    }
+}
