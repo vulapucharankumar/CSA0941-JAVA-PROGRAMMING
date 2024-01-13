@@ -1,0 +1,18 @@
+import java.io.*;
+public class FileSample  
+{
+public static void main(String arg[])
+{
+try
+{
+FileWriter Writer =new FileWriter("QWERTY.txt");
+Writer.write("I have writeen in the above file");
+Writer.close();
+System.out.println("file created"+f);
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+}
+}
